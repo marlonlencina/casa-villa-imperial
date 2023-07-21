@@ -57,9 +57,18 @@ html {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 32px;
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .referenciasGridReverse {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  gap: 32px;
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
+  }
 }
