@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Syne, sans-serif";
+  color: #111211;
+}
+
+.container {
+  max-width: 1216px;
+}
+
+.bg-header-fixed {
+  background-color: #101d17cc;
+  backdrop-filter: blur(10px);
+}
+
+.bg-header-fixed > div > ul {
+  opacity: 1;
+}
+
+.belt-animation-1 {
+  animation: belt-1 12.5s infinite linear;
+}
+
+@keyframes belt-1 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.belt-animation-2 {
+  animation: belt-2 12.5s infinite linear;
+}
+
+@keyframes belt-2 {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.referenciasGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+}
+
+.referenciasGridReverse {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
